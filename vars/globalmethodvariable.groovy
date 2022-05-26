@@ -1,6 +1,6 @@
 
 def printnamestatement(name)
     {   
-        echo ${name}
+        echo name
     }
 
