@@ -1,7 +1,7 @@
-env.NAME_IS="THE NAME IS :"
-def printnamestatement(name)
+def NAME_IS="Hello"
+def printnamestatement(script, name)
     {   
-        namevar=env.NAME_IS + name
+        namevar=script.NAME_IS + name
         return namevar
     }
 
