@@ -1,6 +1,6 @@
 package com.acceleratedskillup
 
-class Valid {
+class Validator {
      static def validatorfunc(script)
      {
          script.echo "The static function is called from the script block"
