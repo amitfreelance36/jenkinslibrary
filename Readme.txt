@@ -71,3 +71,46 @@ pipeline {
     }
 }
 
+
+Fourth:
+
+######################################################
+Static Method call fully qualified name use to load the function dynamically.
+For me this didnt worked 
+
+
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                    script{
+                        Library("jenkinslibrary").src.com.acceleratedskillup.Validator.validatorfunc(this)
+                    }
+            }
+        }
+    }
+}
+
+
+Fifth:
+
+@Library("jenkinslibrary") _
+import com.acceleratedskillup.*
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                script{
+                    Validator.validatorfunc(this)
+                }
+            }
+        }
+    }
+}
+
