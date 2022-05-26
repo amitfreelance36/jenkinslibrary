@@ -1,7 +1,7 @@
 
-def printnamestatement(name)
+def printnamestatement()
     {   
-        namevar= name
+        namevar= "AmitKumar"
         return namevar
     }
 
