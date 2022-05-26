@@ -1,6 +1,6 @@
 
-def printnamestatement(name)
+def printnamestatement()
     {   
-        echo name
+        echo "Amit Kumar"
     }
 
