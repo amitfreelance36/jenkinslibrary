@@ -1,5 +1,5 @@
 
-def printnamestatement(name)
+def call(name)
     {   
         echo name
     }
