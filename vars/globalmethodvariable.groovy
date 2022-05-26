@@ -1,6 +1,7 @@
-def NAME="My Name Is: "
+
 def printnamestatement(name)
-    {  namevar=NAME + name
+    {   
+        namevar=name
         return namevar
     }
 
