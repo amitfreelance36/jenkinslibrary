@@ -1,7 +1,7 @@
-def NAME_IS="Hello"
-def printnamestatement(script, name)
+
+def printnamestatement(name)
     {   
-        namevar=script.NAME_IS + name
+        namevar= name
         return namevar
     }
 
