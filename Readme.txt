@@ -114,3 +114,22 @@ pipeline {
     }
 }
 
+
+##################################################################################
+
+Using the custom step for maven version or maven command execution
+
+@Library('jenkinslibrary') _
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                execMaven("--help")
+                execMaven()
+            }
+        }
+    }
+}
+
