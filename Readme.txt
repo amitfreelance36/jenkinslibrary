@@ -133,3 +133,30 @@ pipeline {
     }
 }
 
+
+################################################################################
+
+loading the resources file and using it inside the pipeline script
+
+@Library("jenkinslibrary") _
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                 script {
+                     def resources=libraryResource("com/mydatas/somelib/jsonlookupfile.json")
+                     writeFile file: "myresource.json", text: resources
+                     sh 'ls -ltr'
+                     printline=readFile "myresource.json"
+                     println(printline)
+
+                 }
+            }
+        }
+    }
+}
+
